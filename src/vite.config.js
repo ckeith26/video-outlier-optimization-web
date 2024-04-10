@@ -2,6 +2,8 @@
 import { defineConfig } from 'vite';
 import eslint from 'vite-plugin-eslint';
 import autoprefixer from 'autoprefixer';
+import favicon from 'favicon';
+import tailwindcss from 'tailwindcss';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -9,7 +11,7 @@ export default defineConfig({
   css: {
     postcss: {
       plugins: [
-        autoprefixer(),
+        autoprefixer(), favicon(), tailwindcss(),
       ],
     },
   },
