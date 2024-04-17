@@ -12,6 +12,10 @@
     - [X]  webpage displays and counts seconds
     - [X]  image displays and is loaded via vite
     - [X]  js is linted without errors!
+    - [X] have working test routes
+    - [X] be deployed to [render.com](https://frontend-starterpack-ckeith26.onrender.com) with rewrites set up.
+    - [X] lint correctly
+    - [X] have fallback routes working
 2. A short answer response in a comment on the feedback pull request in github: 
     - describe the environment you set up.
     I setup the frontend starter pack using vite. I also installed eslint, nvm, and tailwindcss and favicon plugins.  
