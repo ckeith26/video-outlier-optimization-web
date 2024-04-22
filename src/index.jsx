@@ -1,6 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, NavLink, useParams } from 'react-router-dom';
 import './style.scss';
 
 const About = (props) => {
