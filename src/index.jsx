@@ -44,7 +44,7 @@ const App = (props) => {
   return (
   <BrowserRouter>
   <div>
-    <setInterval />
+    {/* <setInterval /> */}
     <Nav />
     <Routes>
       <Route path="/" element={<Welcome />} />
