@@ -1,9 +1,8 @@
 # Frontend Starter Pack
 
 *description*
-
-[deployed url](https://frontend-starterpack-ckeith26-sa5.onrender.com)
-
+[SA4 deployed url](https://frontend-starterpack-ckeith26.onrender.com)
+[SA5 deployed url](https://frontend-starterpack-ckeith26-sa5.onrender.com)
 ## What Worked Well
 
 1. Checklist: 
@@ -13,7 +12,7 @@
     - [X]  image displays and is loaded via vite
     - [X]  js is linted without errors!
     - [X] have working test routes
-    - [X] be deployed to [render.com](https://frontend-starterpack-ckeith26.onrender.com) with rewrites set up.
+    - [X] be deployed to [SA4 deployed url](https://frontend-starterpack-ckeith26.onrender.com) and [SA5 deployed url](https://frontend-starterpack-ckeith26-sa5.onrender.com) with rewrites set up.
     - [X] lint correctly
     - [X] have fallback routes working
 2. A short answer response in a comment on the feedback pull request in github: 
