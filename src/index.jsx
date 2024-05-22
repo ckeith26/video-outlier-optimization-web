@@ -2,32 +2,22 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Routes, Route, NavLink, useParams } from 'react-router-dom';
 import './style.scss';
-import Counter from './components/counter';
-import Controls from './components/controls';
+import Welcome from './components/welcome';
+import Contact from './components/contact';
 
 const About = (props) => {
   return <div> All there is to know about me </div>;
 };
 
-const Welcome = (props) => {
-  return (
-    <div>
-      <Counter />
-      <Controls />
-    </div>
-  );
-};
-
 const Nav = (props) => {
   return (
-      <nav>
-      <ul>
+    <nav id='nav'>
+      <div class='logo'/>
+      <ol id='list'>
           <li><NavLink to="/">Home</NavLink></li>
-          <li><NavLink to="/about">About</NavLink></li>
-          <li><NavLink to="/test/id1">test id1</NavLink></li>
-          <li><NavLink to="/test/id2">test id2</NavLink></li>
-      </ul>
-      </nav>
+          <li><NavLink to="/contact">About</NavLink></li>
+      </ol>
+    </nav>
   );
 };
 
@@ -43,16 +33,13 @@ const FallBack = (props) => {
 const App = (props) => {
   return (
   <BrowserRouter>
-  <div>
-    {/* <setInterval /> */}
-    <Nav />
+    <Nav/>
     <Routes>
       <Route path="/" element={<Welcome />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/test/:id" element={<Test />} />
+      <Route path="/contact" element={<Contact />} />
       <Route path="*" element={<FallBack />} />
     </Routes>
-  </div>
+
   </BrowserRouter>
   );
 };
