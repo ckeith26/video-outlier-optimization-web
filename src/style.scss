@@ -1,6 +1,7 @@
-body, html {
+body,
+html {
   font-family: "Roboto", sans-serif;
-  background: linear-gradient(to bottom, #ffffff,#116f2e);
+  background: #e8e8e8;
   height: 100%;
 }
 
@@ -22,38 +23,36 @@ body, html {
   padding: 10px;
   border-radius: 10px;
   background-color: rgba(124, 216, 176, 0.4);
-  li {
-    // gradient from 
-    border: 4px solid green;
-    padding: 15px;
-    border-radius: 30px;
-    background-color: rgba(124, 216, 176, 0.4);
-    
-    a {
-      text-decoration: none;
-      color: black;
-      font-size: 30px;
-      font-weight: bold;
-    }
-  }
+}
+
+#list li {
+  border-radius: 30px;
+  padding: 5px;
+}
+
+#list li a {
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 20px;
 }
 
 :root {
   text-size-adjust: 100%;
 }
 
-.active {
-  color: pink;
+/* Styling for active state */
+#list li a.active {
+  color: white;
+  background-color: green;
 }
 
 #nav {
   display: flex;
   flex-direction: row;
-  color: white;
   align-items: center;
-}
-#nav::selection {
-  color: black;
+  padding: 10px;
 }
 
 #welcome-container {
@@ -63,10 +62,141 @@ body, html {
   align-items: center;
   height: 100vh;
 
-  
   h1 {
     font-size: 40px;
     border-color: black;
     border-width: 10px;
   }
+}
+
+#contact-container {
+  text-align: center;
+  padding: 20px;
+  // background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.contact-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #555;
+  margin: 10px 0;
+}
+
+p {
+  color: #666;
+  line-height: 1.5;
+}
+
+a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px; /* More space below the header */
+  padding: 20px; /* Padding for internal spacing */
+  // background: linear-gradient(to right, #0066cc, #00ccff); /* Gradient background */
+  background-color: rgba(255, 255, 255, 0.8); /* Dark background color */
+  color: white; /* White text color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  width: fit-content;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 36px; /* Larger font size for the title */
+  margin-bottom: 10px; /* Space below the title */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Text shadow for depth */
+}
+
+header p {
+  font-size: 18px; /* Standard font size for authors */
+  margin: 5px 0; /* Margin for spacing between lines */
+  // color: #e0e0e0; /* Lighter color for authors */
+}
+
+#section-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 60%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+/* Enhanced section style */
+section {
+  background-color: #ffffff; /* White background for contrast */
+  border: 1px solid #ddd; /* Light grey border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 20px; /* Padding inside the section */
+  margin-bottom: 20px; /* Space between sections */
+  transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition for hover effects */
+}
+
+section:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+section h2 {
+  font-size: 24px; /* Larger font for headings */
+  color: #333; /* Dark grey color for headings */
+  margin-bottom: 15px; /* Space below headings */
+}
+
+section p {
+  font-size: 16px; /* Standard font size for paragraphs */
+  color: #555; /* Medium grey color for text */
+  line-height: 1.6; /* Improved readability */
+}
+
+
+#links {
+  display: flex;
+  flex-direction: row;
+}
+#link {
+  gap: 30px;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  margin: 20px;
+}
+#github-link {
+  width: 80px;
+  background-color: white;
+  border-width: 3px;
+  border-radius: 10px;
 }

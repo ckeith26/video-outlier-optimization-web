@@ -5,17 +5,13 @@ import './style.scss';
 import Welcome from './components/welcome';
 import Contact from './components/contact';
 
-const About = (props) => {
-  return <div> All there is to know about me </div>;
-};
-
 const Nav = (props) => {
   return (
     <nav id='nav'>
       <div class='logo'/>
       <ol id='list'>
-          <li><NavLink to="/">Home</NavLink></li>
-          <li><NavLink to="/contact">About</NavLink></li>
+          <li><NavLink to="/">Home</NavLink></li >
+          <li><NavLink to="/contact" >Contact</NavLink></li>
       </ol>
     </nav>
   );
