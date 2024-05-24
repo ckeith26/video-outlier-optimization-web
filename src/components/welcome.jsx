@@ -36,7 +36,7 @@ function Welcome() {
       {/* Add more sections as needed */}
       <Section title="Methodology">
         <p>
-          We first design a video classification model, then work with the training data and consider different ways to generate training samples with different outliers to observe their impact while including them in the model during the training phase.
+          We first design a video classification model, then work with the training data and consider different ways to remove training samples with different outlier requirements to observe the impact on model performance.
         </p>
       </Section>
       <Section title="Results">
