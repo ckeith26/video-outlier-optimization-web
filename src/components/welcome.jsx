@@ -7,6 +7,7 @@ function Welcome() {
     <div className="App">
       <Header 
         title="Do Outliers Matter? Assessing the Impact of Outliers on Video Classifications"
+        img='https://1000logos.net/wp-content/uploads/2022/10/Dartmouth-College-Logo.png'
         authors={[
           "Sayanton Dibbo and Cameron Keith",
           "Department of Computer Science, Dartmouth College, Hanover, NH 03755",
